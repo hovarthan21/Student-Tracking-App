@@ -8,6 +8,14 @@ import av
 # Title and styling
 st.set_page_config(page_title="🎓 DSU Student Finder", layout="centered")
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
+from utils.student_utils import get_student_data
+# rest of your code...
+
+
 st.markdown("""
     <style>
     .title {
