@@ -1,0 +1,8 @@
+streamlit
+pandas
+fuzzywuzzy
+python-Levenshtein
+streamlit-webrtc
+SpeechRecognition
+numpy
+av
