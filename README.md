@@ -30,9 +30,13 @@ An interactive voice- and text-based student room locator system built for **Dha
 4. Displays location and academic information in a clean UI.
 
 
-✍️ Author
+## ✍️ Author
+
 Hovarthan S
+
 B.Tech AI & Data Science 
+
 Dhanalakshmi Srinivasan Engineering College
+
 GitHub: hovarthan21
 
