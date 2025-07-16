@@ -21,7 +21,6 @@ def get_student_data(name, reg_no):
         if not student.empty:
             return student.iloc[0]
 
-        # Fuzzy name match
         df['NAME'] = df['NAME'].str.lower()
         best_match_data = process.extractOne(name.lower(), df['NAME'].tolist())
 
