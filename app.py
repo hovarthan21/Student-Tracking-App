@@ -5,7 +5,6 @@ import speech_recognition as sr
 import numpy as np
 import av
 
-# Title and styling
 st.set_page_config(page_title="🎓 DSU Student Finder", layout="centered")
 
 import sys
@@ -13,8 +12,6 @@ import os
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 from utils.student_utils import get_student_data
-# rest of your code...
-
 
 st.markdown("""
     <style>
@@ -36,13 +33,9 @@ st.markdown("""
 
 st.markdown("<div class='title'> DSU AI Student Finder </div>", unsafe_allow_html=True)
 
-# -----------------------------
-# Helper to use SpeechRecognition with webrtc
-# -----------------------------
 
 class AudioProcessor(AudioProcessorBase):
     def recv(self, frame: av.AudioFrame) -> av.AudioFrame:
-        # Convert audio frame to numpy array
         audio = frame.to_ndarray()
         if audio is not None:
             audio_data = np.array(audio).flatten().tobytes()
@@ -58,12 +51,8 @@ class AudioProcessor(AudioProcessorBase):
                     st.error(f"Google Speech API error: {e}")
         return frame
 
-# -----------------------------
-# Input Section
-# -----------------------------
 st.subheader("Student Details Input")
 
-# Default state
 if "voice_input" not in st.session_state:
     st.session_state["voice_input"] = ""
 
@@ -87,9 +76,6 @@ with col2:
     else:
         reg_no = st.text_input("Enter Register Number")
 
-# -----------------------------
-# Process & Display Results
-# -----------------------------
 if st.button("🔍 Search"):
     if name and reg_no:
         try:
