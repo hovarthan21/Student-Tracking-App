@@ -74,7 +74,7 @@ with col2:
         webrtc_streamer(key="reg", audio_processor_factory=AudioProcessor, media_stream_constraints={"audio": True, "video": False})
         reg_no = st.session_state.get("voice_input", "")
     else:
-        reg_no = st.text_input("Enter Register Number")
+        reg_no = st.text_input("Enter Register Number")..strip()
 
 if st.button("🔍 Search"):
     if name and reg_no:
