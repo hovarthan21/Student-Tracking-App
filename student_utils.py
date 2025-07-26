@@ -4,7 +4,7 @@ from fuzzywuzzy import process
 
 def load_student_data():
     datasets = []
-    for file_name in ['student_data/4th Year.json', 'student_data/2st Year.json', 'student_data/3rd Year.json']:
+    for file_name in ['student_data/4th Year.json', 'student_data/2nd Year.json', 'student_data/3rd Year.json']:
         try:
             with open(file_name, 'r', encoding='utf-8') as file:
                 data = json.load(file)
