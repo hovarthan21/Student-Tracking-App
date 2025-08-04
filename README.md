@@ -29,6 +29,9 @@ An interactive voice- and text-based student room locator system built for **Dha
 3. Fetches student data from multiple `.json` files (2nd, 3rd, 4th year).
 4. Displays location and academic information in a clean UI.
 
+   ## sample video
+[▶ Student Tracking App](https://drive.google.com/file/d/1v6y7WV2Dj9EJY0Hc9ITSaURhVb41lqom/view?usp=sharing)
+
 
 ## ✍️ Author
 
