@@ -4,6 +4,11 @@ An interactive voice- and text-based student room locator system built for **Dha
 
 ---
 
+<p align="center">
+  <img src="img.jpg" width="450" alt="Student Tracking App Logo" />
+</p>
+
+
 ##  Features
 
 - 🔍 Search student data using **voice** or **text input**
